@@ -7,6 +7,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-nav_bar_background: #0e1e25;
+  --color-nav_bar_text: #7e878b;
 }
 /**************/
 /* Typography */
@@ -167,7 +169,7 @@ a {
 /* Navigation Bar */
 /******************/
 .nav {
-  background: #000;
+  background: var(--color-nav_bar_background);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -183,7 +185,7 @@ a {
   border-bottom: 1px solid #222;
 }
 .nav__item > a {
-  color: #d2d0db;
+  color: var(--color-nav_bar_text);
   transition: color 0.3s;
 }
 .nav__item > a:hover {
