@@ -7,9 +7,6 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
-  --color-navbar-background: #0e1e25;
-  --color-navbar-text: #7e878b;
-  --color-navbar-text-hover: #fff;
 }
 /**************/
 /* Typography */
@@ -170,7 +167,7 @@ a {
 /* Navigation Bar */
 /******************/
 .nav {
-  background: var(--color-navbar-background);
+  background: #000;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -186,11 +183,11 @@ a {
   border-bottom: 1px solid #222;
 }
 .nav__item > a {
-  color: var(--color-navbar-text);
+  color: #d2d0db;
   transition: color 0.3s;
 }
 .nav__item > a:hover {
-  color: var(--color-navbar-text-hover);
+  color: #fff;
 }
 .nav__toggler {
   opacity: 0.5;
@@ -202,15 +199,8 @@ a {
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
 }
-.nav__container {
-  height: 60px;
-  width: 170px;
-  margin-left: 20px;
-}
-.bamella_dot_com {
-  height: inherit;
-  width: inherit;
-  object-fit: contain;
+.nav__brand {
+  transform: translateY(5px);
 }
 
 @media screen and (min-width: 768px) {
