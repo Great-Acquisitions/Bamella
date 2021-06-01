@@ -224,3 +224,12 @@ a {
 /*********/
 /* Icons */
 /*********/
+
+.icon {
+  width: 1000px;
+  height: 100px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
