@@ -75,7 +75,6 @@ a {
 }
 .link-arrow {
   color: var(--color-accent);
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -209,14 +208,14 @@ a {
 }
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #666;
 }
 .nav__item > a {
-  color: #000;
+  color: deeppink;
   transition: color 0.3s;
 }
 .nav__item > a:hover {
-  color: deeppink;
+  color: #666;
 }
 .nav__toggler {
   opacity: 0.5;
@@ -327,7 +326,6 @@ a {
   margin: 1rem 0;
   padding: 2rem 3rem;
   text-align: center;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 .btn--primary {
@@ -465,11 +463,17 @@ a {
   text-align: center;
   margin-top: -535px;
   margin-bottom: 376px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .inline_test {
-  font-size: 4.5rem;
+  margin-top: 0px;
+  font-size: 5rem;
+  margin-bottom: 2rem;
 }
 .paragraph_test {
   font-size: 2rem;
   color: #000;
+  margin-bottom: 5rem;
+  margin-top: 0px;
 }
