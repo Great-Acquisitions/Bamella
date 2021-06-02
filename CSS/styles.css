@@ -7,7 +7,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
-  --color-nav_bar_background: #0e1e25;
+  --color-nav_bar_background: #000; /*#0e1e25;*/
   --color-nav_bar_text: #7e878b;
 }
 
@@ -187,6 +187,14 @@ a {
   padding: 0 1rem;
   align-items: center;
 }
+.nav--v2 {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
 .nav__list {
   width: 100%;
   margin: 0;
@@ -200,7 +208,7 @@ a {
   transition: color 0.3s;
 }
 .nav__item > a:hover {
-  color: #fff;
+  color: #000;
 }
 .nav__toggler {
   opacity: 0.5;
@@ -280,6 +288,10 @@ a {
   background: #000;
   color: #7b858b;
 }
+.block--custom {
+  background: var(--color-nav_bar_background);
+  color: #7b858b;
+}
 .block--dark .block__heading {
   color: #fff;
 }
@@ -296,30 +308,7 @@ a {
   max-width: 1140px;
   margin: 0 auto;
 }
-/********/
-/* Hero */
-/********/
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-.hero__tagline {
-  font-size: 2rem;
-  color: #b9c3cf;
-  letter-spacing: 1px;
-  margin: 2rem 0 5rem;
-}
-.hero__image {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 0;
-  }
-  .hero__content {
-    text-align: left;
-    align-self: center;
-  }
-}
+
 /***********/
 /* Buttons */
 /***********/
@@ -373,5 +362,71 @@ a {
   display: inline-block;
 }
 @media screen and (min-width: 1024px) {
-  font-size: 1.5rem;
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+/********/
+/* Hero */
+/********/
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__banner {
+  width: 100%;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero__heading {
+    font-size: 6rem;
+  }
+}
+/****************/
+/* Just Playing */
+/****************/
+/* Container holding the image and the text */
+.container--v2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading__banner__position {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__tagline--v2 {
+  font-size: 2rem;
+  color: #000;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
 }
