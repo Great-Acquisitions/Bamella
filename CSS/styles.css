@@ -195,20 +195,28 @@ a {
   padding: 0 1rem;
   align-items: center;
 }
+.hero__nav-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
 .nav__list {
   width: 100%;
   margin: 0;
 }
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #000;
 }
 .nav__item > a {
-  color: var(--color-nav_bar_text);
+  color: #000;
   transition: color 0.3s;
 }
 .nav__item > a:hover {
-  color: #000;
+  color: #fff;
 }
 .nav__toggler {
   opacity: 0.5;
@@ -292,9 +300,7 @@ a {
   background: var(--color-nav_bar_background);
   color: #7b858b;
 }
-.block--dark .block__heading {
-  color: #fff;
-}
+
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
@@ -373,10 +379,6 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
-.hero__banner {
-  width: 100%;
-}
-
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -394,39 +396,60 @@ a {
     text-align: left;
     align-self: center;
   }
-
-  .hero__heading {
-    font-size: 6rem;
-  }
 }
-/****************/
-/* Just Playing */
-/****************/
-/* Container holding the image and the text */
-.container--v2 {
+/*********************/
+/* Hero >> Container */
+/*********************/
+.hero__container {
   position: relative;
+}
+/**************************/
+/* Hero >> Navigation Bar */
+/**************************/
+.hero__nav-bar__position--top-right {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+}
+.hero__nav-brand-name__position--top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+/****************/
+/* Hero >> Text */
+/****************/
+.hero__text__position--center {
+  width: 65%;
   text-align: center;
-  color: white;
-}
-
-/* Centered text */
-.centered {
   position: absolute;
-  top: 50%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.heading__banner__position {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hero__heading {
+  margin-top: 0;
+  font-size: 3rem;
 }
-
-.hero__tagline--v2 {
-  font-size: 2rem;
+.hero__paragraph {
+  font-size: 1.2rem;
   color: #000;
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
+}
+@media screen and (min-width: 900px) {
+  .hero__text__position--center {
+  }
+  .hero__heading {
+    font-size: 4.5rem;
+  }
+  .hero__paragraph {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .web-magic {
+    /*display: none;*/
+  }
 }
