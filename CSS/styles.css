@@ -208,14 +208,14 @@ a {
 }
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #000;
 }
 .nav__item > a {
-  color: deeppink;
+  color: #000;
   transition: color 0.3s;
 }
 .nav__item > a:hover {
-  color: #666;
+  color: deeppink;
 }
 .nav__toggler {
   opacity: 0.5;
