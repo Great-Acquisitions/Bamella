@@ -454,9 +454,6 @@ a {
   height: 100vh;
   background: url("/images/Background-Image.jpeg");
   background-size: cover;
-}
-
-.For-Align-Center {
   text-align: center;
 }
 
