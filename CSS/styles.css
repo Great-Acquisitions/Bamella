@@ -353,28 +353,6 @@ a {
   left: 16px;
 }
 
-/*********************/
-/* Main >> Container */
-/*********************/
-.main__container {
-  margin: 0;
-}
-/*********************/
-/* Hero >> Container */
-/*********************/
-.hero__container {
-  border: 2rem solid #000;
-  height: 585px;
-  overflow: hidden;
-  width: auto;
-}
-.hero__image {
-  height: inherit;
-  width: inherit;
-  object-fit: cover;
-  transform: scale(1) translate(-45%, 0);
-  z-index: -1;
-}
 .hero__section {
   text-align: center;
   margin-top: -535px;
@@ -384,42 +362,15 @@ a {
   position: absolute;
   z-index: 1;
 }
-.hero__heading {
-  margin-top: 0px;
-  font-size: 4.5rem;
-  margin-bottom: 2rem;
-  color: #1245a8;
-}
+
 .hero__paragraph {
   font-size: 2rem;
   color: #000;
   margin-bottom: 5rem;
   margin-top: 0px;
 }
-.hero__button {
-}
-
-img {
-  width: 100%;
-  display: block;
-}
 
 @media screen and (min-width: 900px) {
-  .hero__image {
-    height: inherit;
-    width: inherit;
-    object-fit: cover;
-    transform: scale(1) translate(0, 0);
-    z-index: -1;
-  }
-
-  .hero__heading {
-  }
-  .hero__paragraph {
-    font-size: 2rem;
-  }
-  .hero__button {
-  }
 }
 
 /*******************/
@@ -479,7 +430,20 @@ img {
   }
 }
 
-.pretend_body {
+/*********************/
+/* Main >> Container */
+/*********************/
+.main__container {
+  margin: 0;
+}
+/*********************/
+/* Hero >> Container */
+/*********************/
+.hero__container {
+  border: 2rem solid #000;
+  height: 585px;
+  overflow: hidden;
+  width: auto;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -493,10 +457,18 @@ img {
   background-size: cover;
 }
 
-.animation_text {
-  color: #fbb821;
-  font-size: 3rem;
+.hero__heading {
+  margin-top: 0px;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  color: #1245a8;
 }
+
+.hero__animated__text__style {
+  color: #fbb821;
+  font-size: 5rem;
+}
+
 .typing {
   position: relative;
   margin-left: 10px;
@@ -507,8 +479,8 @@ img {
   position: absolute;
   right: -10px;
   width: 1px;
-  height: 6%;
-  border-right: 3px solid #fbb821;
+  height: 5.5%;
+  border-right: 5px solid #fbb821;
   animation: blink 0.9s infinite ease;
 }
 
