@@ -1,60 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bamella - For Great Loved Ones.</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/styles.css" />
-  </head>
-  <body>
-    <!-- header >> starts here -->
-    <header>
-      <nav class="nav--v2 collapsible">
-        <a href="/"
-          ><img class="nav__brand" src="images/Bamella dot com.jpg" alt=""
-        /></a>
+<html>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px;
+    }
+
+    /******************************************************/
+    /* Added classes BELOW that need to be better written */
+    /******************************************************/
+
+    .footer--skin {
+      font-size: 15px;
+      text-align: center;
+    }
+    .About__Margins {
+      margin-top: -35px;
+    margin-bottom: -66px;
+    }
+    .Purchase__Margin {
+      margin-top: 60px;
+    }
+    .Images__Margin {
+      margin-top: -90px;
+    }
+    .Testimonials__Margin {
+      margin-top: -70px;
+    }
+
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <img src="images/Bamella-Logo-Icon.jpg" style="width: 100%" />
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+
+      <a
+      href="#purchase"
+      class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+    >
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>PURCHASE</p>
+    </a>
+
+      <a
+        href="#images"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>IMAGES</p>
+      </a>
+
+      
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="
+          w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small
+        "
+      >
+        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >ABOUT</a
+        >
+
+        <a
+        href="#purchase"
+        class="w3-bar-item w3-button"
+        style="width: 25% !important"
+        >PURCHASE</a
+      >
+
+        <a
+          href="#images"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >IMAGES</a
+        >
+ 
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Welcome...</h1>
+        <p>To fellow lovers of cremation urns.</p>
         <img
-          class="nav__toggler"
-          src="icons/menu.svg"
-          alt=""
-          height="40"
-          width="40"
+          src="images/Bamella-Website-Hero-Image.jpg"
+          alt="Great looking happy couple."
+          class="w3-image"
+          width="992"
+          height="1108"
         />
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">About Us</a></li>
-          <li class="nav__item">
-            <a href="resources/resources.html">Helpful Guides</a>
-          </li>
-          <li class="nav__item"><a href="#">The Bamella Urns Collection</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- main >> starts here -->
-    <main class="main__container">
-      <!-- hero >> starts here -->
-      <div class="hero__container">
-        <div class="intro">
-          <h1 class="hero__heading">Are you planning a Funeral?</h1>
-          <div class="Change-Block-To-Flex">
-            <h1 class="hero__animated__text__style"></h1>
-            <h1 class="typing hero__animated__text__style">hi</h1>
+      </header>
+
+      <!-- About Section -->
+      <div class="About__Margins w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p class="Add__Bottom-Margin">
+          Everything we do is about making great products, for great loved ones.  Our values are Greatness, Long-Term Thinking, and Persistence.  Currently our Bamella Urns Collection is just one urn, our <b>Pebble Inspired Urn</b>, however more are coming.</p>
+
+        
+
+        <!-- End About Section -->
+
+        <!-- My Skills / This information has been removed, but may be required one day ???
+        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <p class="w3-wide">Photography</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
         </div>
+        <p class="w3-wide">Web Design</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 85%"></div>
+        </div>
+        <p class="w3-wide">Photoshop</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 80%"></div>
+        </div>
+        <br />
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">11+</span><br />
+            Partners
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">55+</span><br />
+            Projects Done
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">89+</span><br />
+            Happy Clients
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br />
+            Meetings
+          </div>
+        </div>
+
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+      -->
+
+        <!-- Grid for purchase locations -->
+        <h3 class="Purchase__Margin w3-text-light-grey" id="purchase">Purchase Locations</h3>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Amazon USA</li>
+              <li class="w3-padding-16">Pebble Inspired Urn</li>
+            </ul>
+          </div>
+
+          <div class="w3-half">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Amazon AUS</li>
+              <li class="w3-padding-16">Pebble Inspired Urn</li>
+            </ul>
+          </div>
+          <!-- End Grid/Products tables -->
+        </div>
+
+        
       </div>
 
-      <h1>This site is under construction.</h1>
-      <p>
-        Coming soon in 2021 !!! The owner is using this website as a playground
-        for learning HTML, CSS & Java Script programming, while under
-        construction.
-      </p>
-    </main>
-    <script src="js/Collapsible_Nav_Bar.js"></script>
-    <script src="js/Animated_Text.js"></script>
+      <!-- Portfolio Section -->
+      <div class="Images__Margin w3-padding-64 w3-content" id="images">
+        <h2 class="w3-text-light-grey">Images</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- Grid for images -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img src="images/Bamella-Packaging-Open.jpg" style="width: 100%" />
+            <img src="images/Bamella-Packaging-Closed-1.jpg" style="width: 100%" />
+            <img src="images/Bamella-Packaging-Closed-2.jpg" style="width: 100%" />
+            <img src="images/Bamella-Infographic-Parts.jpg" style="width: 100%" />
+            <img src="images/Bamella-Infographic-Dimensions.jpg" style="width: 100%" />
+            <img src="images/Bamella-In-Car.JPG" style="width: 100%" />
+          </div>
+
+          <div class="w3-half">           
+            <img src="images/Bamella-On-Chair.jpg" style="width: 100%" />
+            <img src="images/Bamella-On-Table-01.jpg" style="width: 100%" />
+            <img src="images/Bamella-On-Table-02.jpg" style="width: 100%" />
+            <img src="images/Bamella-On-Table-03.jpg" style="width: 100%" />
+            <img src="images/Bamella-On-Table-04.jpg" style="width: 100%" />
+            <img src="images/Bamella-On-Table-05.jpg" style="width: 100%" />
+            <img src="images/Bamella-On-Table-06.jpg" style="width: 100%" />
+            <img src="images/Bamella-On-Table-08.jpg" style="width: 100%" />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+<!-- Testimonials -->
+
+      <!-- Testimonial Section -->
+      <div class="Testimonials__Margin w3-content w3-justify w3-text-grey w3-padding-64" id="testimonials">
+        <h2 class="w3-text-light-grey">Testimonials</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <img
+        src="images/Jeff Bezos.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 80px" />
+        <p><span class="w3-large w3-margin-right">Jeff Bezos.</span><b> Founder & CEO at Amazon.</b></p>
+        <p>Jeff has not yet seen this urn.  So this spot is reserved for the future, since the urn has not arrived at Amazon.</p>
+        <br />
+
+        <!-- 2nd Testimonial
+        <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 80px"/>
+        <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+        <p>No one is better than John Doe.</p>
+        -->
+        </div>
+
+
+
+
+
+
+
+
+      <!-- Contact Section -->
+      <!-- Contact / This information has been removed, but may be required one day ???
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="
+                fa fa-map-marker fa-fw
+                w3-text-white w3-xxlarge w3-margin-right
+              "
+            ></i>
+            Chicago, US
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Phone: +00 151515
+          </p>
+          <p>
+            <i
+              class="
+                fa fa-envelope fa-fw
+                w3-text-white w3-xxlarge w3-margin-right
+              "
+            >
+            </i>
+            Email: mail@mail.com
+          </p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="w3-button w3-light-grey w3-padding-large"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+            -->
+
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer--skin">
+          <p>Powered by:  A team passionate about making great products, for great loved ones.</p>
+        </div>
+      <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
   </body>
 </html>
