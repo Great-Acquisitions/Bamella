@@ -12,6 +12,17 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   margin: 0;
 }
@@ -1618,4 +1629,39 @@ a {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
+}
+
+/********************************/
+/* Added from other styles file */
+/********************************/
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+
+/******************************************************/
+/* Added classes BELOW that need to be better written */
+/******************************************************/
+
+.footer--skin {
+  font-size: 15px;
+  text-align: center;
+}
+.About__Margins {
+  margin-top: -35px;
+  margin-bottom: -66px;
+}
+.Purchase__Margin {
+  margin-top: 60px;
+}
+.Images__Margin {
+  margin-top: -90px;
+}
+.Testimonials__Margin {
+  margin-top: -70px;
 }
