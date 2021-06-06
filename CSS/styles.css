@@ -405,9 +405,6 @@ a {
   text-align: left;
   padding: 8px 16px;
 }
-.w3-main {
-  transition: margin-left 0.4s;
-}
 .w3-modal {
   z-index: 3;
   display: none;
