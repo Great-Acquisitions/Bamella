@@ -33,7 +33,6 @@ figcaption,
 figure,
 footer,
 header,
-.main,
 menu,
 nav,
 section {
@@ -454,8 +453,7 @@ a {
   text-align: left;
   padding: 8px 16px;
 }
-.w3-main,
-.main {
+.w3-main {
   transition: margin-left 0.4s;
 }
 .w3-modal {
@@ -1664,4 +1662,24 @@ a {
 }
 .Testimonials__Margin {
   margin-top: -70px;
+}
+
+/********************************/
+/* Added from other styles file */
+/********************************/
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+.main {
+  display: block;
+  margin-left: 120px;
+  transition: margin-left 0.4s;
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  .main {
+    display: block;
+    margin-left: 0;
+    transition: margin-left 0.4s;
+  }
 }
