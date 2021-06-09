@@ -383,7 +383,7 @@ a {
   position: relative;
   top: 6px;
 }
-.w3-sidebar {
+.Sidebar {
   height: 100%;
   width: 200px;
   background-color: #fff;
@@ -712,7 +712,7 @@ a {
   .w3-hide-large {
     display: none !important;
   }
-  .w3-sidebar.w3-collapse {
+  .Sidebar.w3-collapse {
     display: block !important;
   }
 }
@@ -722,7 +722,7 @@ a {
   }
 }
 @media (max-width: 992px) {
-  .w3-sidebar.w3-collapse {
+  .Sidebar.w3-collapse {
     display: none;
   }
   .w3-main {
@@ -1586,7 +1586,7 @@ a {
   margin-bottom: 12px;
 }
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {
+.Sidebar {
   width: 120px;
   background: #222;
 }
