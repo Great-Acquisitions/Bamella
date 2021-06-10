@@ -1,4 +1,4 @@
-const texts = ['Your not alone.', 'Your not alone.', 'You are not alone.'];
+const texts = ['To fellow lovers of cremation urns.', 'To fellow lovers of cremation urns.', 'To fellow lovers of cremation urns.'];
 let count = 0;
 let index = 0;
 let currentText = "";
