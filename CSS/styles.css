@@ -58,12 +58,14 @@ img {
 
 .intro {
   display: flex;
-  color: white;
+  justify-content: center;
 }
 
 .typing {
   position: relative;
   margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .typing::after {
