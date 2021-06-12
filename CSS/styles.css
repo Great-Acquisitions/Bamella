@@ -111,6 +111,7 @@ img {
   position: fixed;
   width: 120px;
   z-index: 1;
+  font-size: 12px;
 }
 
 .sidebar--container.w3-collapse {
