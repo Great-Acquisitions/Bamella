@@ -86,7 +86,7 @@ img {
 /* Section Containers */
 /**********************/
 
-.About--Container {
+.about--container {
   margin-top: -35px;
   margin-bottom: -66px;
   max-width: 980px;
@@ -1337,7 +1337,7 @@ a {
   color: #000 !important;
   background-color: #fff !important;
 }
-.Set-Background-Black,
+.body--container,
 .w3-hover-black:hover {
   color: #fff !important;
   background-color: #000 !important;
