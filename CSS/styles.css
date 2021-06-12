@@ -103,6 +103,32 @@ img {
   }
 }
 
+/* Set the width of the sidebar to 120px */
+.sidebar--container {
+  background: #222;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  width: 120px;
+  z-index: 1;
+}
+
+.sidebar--container.w3-collapse {
+  display: block;
+}
+
+@media (min-width: 993px) {
+  .sidebar--container.w3-collapse {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar--container.w3-collapse {
+    display: none;
+  }
+}
+
 .about--container {
   color: #757575;
   margin-bottom: -66px;
@@ -469,14 +495,7 @@ a {
   position: relative;
   top: 6px;
 }
-.Sidebar {
-  height: 100%;
-  width: 200px;
-  background-color: #fff;
-  position: fixed !important;
-  z-index: 1;
-  overflow: auto;
-}
+
 .sidebar-block .w3-dropdown-hover,
 .sidebar-block .w3-dropdown-click {
   width: 100%;
@@ -798,9 +817,6 @@ a {
   .w3-hide-large {
     display: none !important;
   }
-  .Sidebar.w3-collapse {
-    display: block !important;
-  }
 }
 @media (max-width: 992px) and (min-width: 601px) {
   .w3-hide-medium {
@@ -808,9 +824,6 @@ a {
   }
 }
 @media (max-width: 992px) {
-  .Sidebar.w3-collapse {
-    display: none;
-  }
   .w3-main {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -1670,11 +1683,6 @@ a {
 
 .w3-row-padding img {
   margin-bottom: 12px;
-}
-/* Set the width of the sidebar to 120px */
-.Sidebar {
-  width: 120px;
-  background: #222;
 }
 
 /******************************************************/
