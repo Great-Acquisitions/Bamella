@@ -85,7 +85,6 @@ img {
 /**********************/
 /* Section Containers */
 /**********************/
-
 .about--container {
   color: #757575;
   margin-bottom: -66px;
@@ -97,12 +96,10 @@ img {
   padding-top: 64px;
   text-align: justify;
 }
-
 .purchase--container {
   color: #f1f1f1;
   margin-top: 60px;
 }
-
 .portfolio--container {
   margin-left: auto;
   margin-right: auto;
@@ -110,6 +107,10 @@ img {
   max-width: 980px;
   padding-bottom: 64px;
   padding-top: 64px;
+}
+
+.testimonial--container {
+  margin-top: -70px;
 }
 
 /********************************/
@@ -1658,10 +1659,6 @@ a {
 .footer--skin {
   font-size: 15px;
   text-align: center;
-}
-
-.Testimonials__Margin {
-  margin-top: -70px;
 }
 
 /********************************/
