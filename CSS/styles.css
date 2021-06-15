@@ -149,6 +149,19 @@ img {
   }
 }
 
+.header--container:after,
+.header--container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header--container {
+  padding: 0.01em 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .about--container {
   color: #757575;
   margin-bottom: -66px;
