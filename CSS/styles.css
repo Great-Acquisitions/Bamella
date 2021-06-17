@@ -63,7 +63,15 @@ img {
   position: relative;
   margin-top: 0px;
   margin-bottom: 30px;
+  font-size: 15px;
 }
+
+@media (min-width: 600px) {
+  .typing {
+    font-size: 20px;
+  }
+}
+
 .typing::after {
   content: "";
   position: absolute;
