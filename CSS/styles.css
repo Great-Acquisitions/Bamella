@@ -3,8 +3,8 @@
   /*****************/
   /* Color Palette */
   /*****************/
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
+  --color-primary: #fbb821;
+  --color-secondary: white;
   --color-accent: #fbb821;
   --color-headings: #1b0760;
   --color-body: #918ca4;
@@ -168,7 +168,7 @@ img {
   padding: 0.01em 16px;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #fff;
+  color: --color-primary;
   background-color: #000;
 }
 
@@ -183,6 +183,27 @@ img {
   padding-top: 64px;
   text-align: justify;
 }
+
+/****************************/
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.icon {
+  height: 100px;
+  color: #fbb821;
+}
+
+/****************************/
+
 .purchase--container {
   color: #f1f1f1;
   margin-top: 60px;
