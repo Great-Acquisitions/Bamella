@@ -190,6 +190,15 @@ img {
   text-align: justify;
 }
 
+.about--text {
+  /* color: var(--color-secondary); */
+  margin-bottom: 35px;
+}
+.about--icon-text {
+  /* color: var(--color-secondary); */
+  margin-bottom: 10px;
+}
+
 /****************************/
 
 /* Grids */
