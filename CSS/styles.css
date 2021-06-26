@@ -94,6 +94,11 @@ img {
 /* Section Containers */
 /**********************/
 
+.body--container-new {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
 .topmenu--container {
   position: fixed;
   width: 100%;
