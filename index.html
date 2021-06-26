@@ -14,7 +14,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-  <body class="body--container">
+  <body>
     <!--------------------------------------->
     <!-- Sidebar (Hidden on small screens) -->
     <!--------------------------------------->
@@ -26,28 +26,28 @@
         class="w3-bar-item w3-button w3-padding-large body--container"
       >
         <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
+        <p style="font-size: 12px">HOME</p>
       </a>
       <a
         href="#about"
         class="w3-bar-item w3-button w3-padding-large w3-hover-black"
       >
         <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
+        <p style="font-size: 12px">ABOUT</p>
       </a>
       <a
         href="#purchase"
         class="w3-bar-item w3-button w3-padding-large w3-hover-black"
       >
         <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>PURCHASE</p>
+        <p style="font-size: 12px">PURCHASE</p>
       </a>
       <a
         href="#images"
         class="w3-bar-item w3-button w3-padding-large w3-hover-black"
       >
         <i class="fa fa-eye w3-xxlarge"></i>
-        <p>IMAGES</p>
+        <p style="font-size: 12px">IMAGES</p>
       </a>
       <!-- End of Sidebar (Hidden on small screens) -->
     </nav>
@@ -64,25 +64,14 @@
           small-fontsize
         "
       >
-        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
-          >HOME</a
-        >
-        <a
-          href="#about"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
+        <a href="#" class="w3-bar-item w3-button" style="width: 25%">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width: 25%"
           >ABOUT</a
         >
-        <a
-          href="#purchase"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
+        <a href="#purchase" class="w3-bar-item w3-button" style="width: 25%"
           >PURCHASE</a
         >
-        <a
-          href="#images"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
+        <a href="#images" class="w3-bar-item w3-button" style="width: 25%"
           >IMAGES</a
         >
       </div>
@@ -107,7 +96,7 @@
       <!------------------------>
       <header class="header--container w3-center" id="home">
         <!-- Page hook text.  This will determine if people will scroll down or not. -->
-        <h1 class="w3-jumbo">Welcome...</h1>
+        <h1>Welcome...</h1>
 
         <!-- Typing Container -->
         <div class="intro">
@@ -131,7 +120,7 @@
       <div class="about--container" id="about">
         <h2 class="w3-text-light-grey">About</h2>
         <hr style="width: 200px" class="w3-opacity" />
-        <p style="color: white; margin-bottom: 35px">
+        <p class="about--text">
           Everything we do, we believe in quality first. Nothing is more
           important to us, than the feeling of being proud. We are proud of what
           we produce for our customers who are buying
@@ -151,7 +140,7 @@
             <!--<svg class="icon">
               <use xlink:href="images/sprite.svg#checkbox-outline"></use>
             </svg> -->
-            <p style="color: white; margin-top: 10px">Crafted Urn Inspection</p>
+            <p class="about--icon-text">Crafted Urn Inspection</p>
           </div>
           <div style="height: 165px; text-align: center">
             <!-- outline: 1px solid red -->
@@ -164,9 +153,7 @@
             <use xlink:href="images/sprite.svg#checkbox-outline"></use>
           </svg> -->
 
-            <p style="color: white; margin-top: 10px">
-              Packaged Urn Inspection
-            </p>
+            <p class="about--icon-text">Packaged Urn Inspection</p>
           </div>
           <div style="height: 165px; text-align: center">
             <!-- outline: 1px solid red -->
@@ -178,23 +165,21 @@
             <!--<svg class="icon">
               <use xlink:href="images/sprite.svg#checkbox-outline"></use>
             </svg> -->
-            <p style="color: white; margin-top: 10px">
-              Independent Urn Inspection
-            </p>
+            <p class="about--icon-text">Independent Urn Inspection</p>
           </div>
         </div>
-        <p style="color: white">
+        <p>
           Currently our Bamella Urns Collection is just one urn, our
           <b>Pebble Inspired Urn</b>, however more are coming...
         </p>
-        <p style="color: white" class="Add__Bottom-Margin">Wanna buy one ???</p>
+        <p>Wanna buy one ???</p>
 
         <!-- End About Section -->
 
         <!-------------------------->
         <!-- (3) Purchase Section -->
         <!-------------------------->
-        <h3 class="purchase--container" id="purchase">Purchase Locations</h3>
+        <h2 class="purchase--container" id="purchase">Purchase Locations</h3>
         <hr style="width: 200px" class="w3-opacity" />
 
         <div class="w3-row-padding" style="margin: 0 -16px">
