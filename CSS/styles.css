@@ -261,6 +261,10 @@ img {
   text-align: justify;
 }
 
+.small-fontsize {
+  font-size: 12px !important;
+}
+
 /********************************/
 /* Styles.CSS created by others */
 /********************************/
@@ -1207,9 +1211,7 @@ a {
 .w3-tiny {
   font-size: 10px !important;
 }
-.small-fontsize {
-  font-size: 12px !important;
-}
+
 .w3-medium {
   font-size: 15px !important;
 }
